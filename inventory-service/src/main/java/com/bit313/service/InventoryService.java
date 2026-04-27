@@ -1,11 +1,12 @@
 package com.bit313.service;
 
-import com.bit313.model.Order;
-import com.bit313.model.ServiceResponse;
-import org.springframework.stereotype.Service;
-
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import org.springframework.stereotype.Service;
+
+import com.bit313.model.Order;
+import com.bit313.model.ServiceResponse;
 
 /**
  * ============================================================
@@ -31,16 +32,16 @@ public class InventoryService {
     // Simulated stock levels for 10 products
     // ConcurrentHashMap is thread-safe — safe for virtual threads
     private final Map<String, Integer> stockLevels = new ConcurrentHashMap<>(Map.of(
-        "PROD-0", 1000,
-        "PROD-1", 500,
-        "PROD-2", 750,
-        "PROD-3", 300,
-        "PROD-4", 1200,
-        "PROD-5", 800,
-        "PROD-6", 450,
-        "PROD-7", 600,
-        "PROD-8", 900,
-        "PROD-9", 250
+    "PROD-0", 10000,
+    "PROD-1", 10000,
+    "PROD-2", 10000,
+    "PROD-3", 10000, 
+    "PROD-4", 10000,
+    "PROD-5", 10000,
+    "PROD-6", 10000,
+    "PROD-7", 10000,
+    "PROD-8", 10000,
+    "PROD-9", 10000  
     ));
 
     /**

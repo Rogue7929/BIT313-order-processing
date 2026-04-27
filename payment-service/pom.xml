@@ -14,7 +14,7 @@
     <groupId>com.bit313</groupId>
     <artifactId>payment-service</artifactId>
     <version>1.0.0</version>
-    <n>payment-service</n>
+    <name>payment-service</name>
     <description>BIT313 Phase 2 - Payment Service with Virtual Threads</description>
 
     <properties>
