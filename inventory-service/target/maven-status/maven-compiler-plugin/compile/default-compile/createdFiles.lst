@@ -1,0 +1,5 @@
+com\bit313\model\Order.class
+com\bit313\controller\InventoryController.class
+com\bit313\InventoryServiceApplication.class
+com\bit313\service\InventoryService.class
+com\bit313\model\ServiceResponse.class

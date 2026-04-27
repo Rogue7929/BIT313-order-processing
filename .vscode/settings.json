@@ -1,0 +1,17 @@
+{
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.import.maven.enabled": true,
+  "java.jdt.ls.vmargs": "-XX:+UseG1GC -XX:+UseStringDeduplication -Xmx2G -Xms100m",
+  "java.test.config.name": "failOnInfo",
+  "java.test.defaultConfig": "Current File",
+  "[java]": {
+    "editor.defaultFormatter": "redhat.java",
+    "editor.formatOnSave": true
+  },
+  "redhat.telemetry.enabled": false,
+  "extensions.recommendations": [
+    "vscjava.vscode-java-pack",
+    "SonarSource.sonarlint-vscode",
+    "ms-azuretools.vscode-docker"
+  ]
+}

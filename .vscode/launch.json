@@ -1,0 +1,41 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Order Service - Debug",
+      "request": "launch",
+      "mainClass": "com.bit313.OrderServiceApplication",
+      "preLaunchTask": "maven: build order-service",
+      "cwd": "${workspaceFolder}/order-service",
+      "console": "integratedTerminal",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "dev"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Inventory Service - Debug",
+      "request": "launch",
+      "mainClass": "com.bit313.InventoryServiceApplication",
+      "preLaunchTask": "maven: build inventory-service",
+      "cwd": "${workspaceFolder}/inventory-service",
+      "console": "integratedTerminal",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "dev"
+      }
+    },
+    {
+      "type": "java",
+      "name": "Payment Service - Debug",
+      "request": "launch",
+      "mainClass": "com.bit313.PaymentServiceApplication",
+      "preLaunchTask": "maven: build payment-service",
+      "cwd": "${workspaceFolder}/payment-service",
+      "console": "integratedTerminal",
+      "env": {
+        "SPRING_PROFILES_ACTIVE": "dev"
+      }
+    }
+  ]
+}
