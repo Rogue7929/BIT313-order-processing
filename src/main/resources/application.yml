@@ -1,0 +1,39 @@
+spring:
+  application:
+    name: reactive-order-processing
+  webflux:
+    base-path: /api
+  output:
+    ansi:
+      enabled: always
+
+server:
+  port: 8080
+  netty:
+    connection-timeout: 10000ms
+    idle-timeout: 60000ms
+
+# Reactive configuration
+reactor:
+  netty:
+    ioWorkerCount: 8
+
+# Logging configuration
+logging:
+  level:
+    root: INFO
+    com.project.reactiveorders: DEBUG
+    reactor.netty: INFO
+  pattern:
+    console: "%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n"
+
+# Management endpoints for monitoring
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,metrics,threaddump
+  metrics:
+    distribution:
+      percentiles-histogram:
+        http.server.requests: true
