@@ -47,17 +47,6 @@ echo  5. Stock levels      : 10,000 units per product
 echo  6. Metrics to record : executionTimeMs, confirmed,
 echo                         failed, throughput
 echo.
-echo --- PHASE 3 COMPARISON TABLE ---
-echo  Metric               VirtualThreads    Reactive
-echo  Total Orders         5,000             5,000
-echo  Confirmed            4,998             (fill in)
-echo  Failed               2                 (fill in)
-echo  Success Rate         99.96%%            (fill in)
-echo  Execution Time       15,827ms          (fill in)
-echo  Throughput           ~316/sec          (fill in)
-echo  CPU Usage            (record)          (record)
-echo  Memory Usage         (record)          (record)
-echo.
 echo ================================================
 echo  Generated for BIT313 Concurrent Programming
 echo ================================================
